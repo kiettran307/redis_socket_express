@@ -1,0 +1,20 @@
+const redis_wrapper = require('./utils/redis_wrapper');
+// redis_wrapper.setStringType('key', 'value');
+// redis_wrapper.getStringType('key');
+redis_wrapper.delKey('key');
+redis_wrapper.pushListTypeMultiple('key', true, 1,2,3,4, 5);
+// redis_wrapper.getStringType('key');
+// redis_wrapper.pushListType('key', 'Tran', true);
+// redis_wrapper.pushListType('key', 'Tan', true);
+// redis_wrapper.pushListType('key', 'Kiet', true);
+// // redis_wrapper.setListType('key', '12333', 3);
+// redis_wrapper.showListWithRange('key', 0, 100);
+// redis_wrapper.popListType('key', false);
+redis_wrapper.showListWithRange('key', 0, -1);
+// redis_wrapper.getListSize('key');
+// redis_wrapper.getItemIndex('key', 0);
+// redis_wrapper.insertItem('key', 'AFTER', 3, 21);
+// redis_wrapper.showListWithRange('key', 0, -1);
+
+redis_wrapper.insertAtIndexItem('key', 1,2);
+// redis_wrapper.getStringType('key');
